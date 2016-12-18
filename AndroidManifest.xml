@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gestionentreprise"
+    android:versionCode="${app.version.code}"
+    android:versionName="${app.version.name}" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.gestionentreprise.gui.activity.ListePrestationActivity"
+            android:label="@string/title_activity_liste_prestation" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gestionentreprise.activity.AccueilActivity" />
+        </activity>
+        <activity
+            android:name="com.gestionentreprise.gui.activity.DetailPrestationActivity"
+            android:label="@string/title_activity_detail_prestation" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gestionentreprise.activity.ListePrestationActivity" />
+        </activity>
+        <activity
+            android:name="com.gestionentreprise.gui.activity.DetailClientActivity"
+            android:label="@string/title_activity_detail_client" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gestionentreprise.activity.DetailPrestationActivity" />
+        </activity>
+        <activity
+            android:name="com.gestionentreprise.gui.activity.ListeDepenseActivity"
+            android:label="@string/title_activity_liste_depense" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gestionentreprise.activity.AccueilActivity" />
+        </activity>
+        <activity
+            android:name="com.gestionentreprise.gui.activity.DetailDepenseActivity"
+            android:label="@string/title_activity_detail_depense" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gestionentreprise.activity.ListeDepenseActivity" />
+        </activity>
+        <activity
+            android:name="com.gestionentreprise.gui.activity.SuiviActivity"
+            android:label="@string/title_activity_suivi" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gestionentreprise.activity.AccueilActivity" />
+        </activity>
+        <activity
+            android:name="com.gestionentreprise.gui.activity.AccueilActivity"
+            android:label="@string/title_activity_accueil" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gestionentreprise.gui.activity.CalendarActivity"
+            android:label="@string/title_activity_calendar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gestionentreprise.activity.AccueilActivity" />
+        </activity>
+        <activity 
+            android:name="com.gestionentreprise.gui.activity.DetailRdvActivity"
+            android:label="@string/title_activity_detail_rdv" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gestionentreprise.activity.CalendarActivity" />
+        </activity>
+    </application>
+
+</manifest>

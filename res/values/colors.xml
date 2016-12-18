@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cal_fond_pair">#66ECF6CE</color>
+    <color name="cal_fond_impair">#66CECEF6</color>
+    <color name="cal_rdv">#FF74C2FC</color>
+    <color name="cal_rdv_conflit">#FB6B66</color>
+</resources>
